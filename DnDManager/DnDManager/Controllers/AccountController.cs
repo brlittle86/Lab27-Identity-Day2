@@ -62,7 +62,7 @@ namespace DnDManager.Controllers
                 }
             }
             string error = "Your password is incorrect.";
-
+            ModelState.AddModelError("", error);
             return View();
         }
 
