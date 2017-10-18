@@ -1,1 +1,11 @@
-﻿
+﻿@model List<DnDManager.Models.Character>
+
+@foreach (var item in Model)
+{
+    if (item.IsAlive)
+	{
+		<h1>@item.Name</h1>
+    <h2>@item.Class</h2>
+    <h2>@item.Race</h2> 
+	}
+}
